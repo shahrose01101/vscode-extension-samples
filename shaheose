@@ -1,0 +1,49 @@
+
+var options = {
+    chart: {
+      height: 380,
+      width: "100%",
+      type: "area",
+      animations: {
+        initialAnimation: {
+          enabled: false
+        }
+      }
+    },
+    series: [
+      {
+        name: "Series 1",
+        data: [
+          {
+            x: "03-19-2022 GMT",
+            y: 200
+          },
+          {
+            x: "03-26-2022 GMT",
+            y: 427
+          },
+          {
+            x: "04-02-2022 GMT",
+            y: 652
+          },
+          {
+            x: "04-09-2022 GMT",
+            y: 850
+          },
+          {
+            x: "04-16-2022 GMT",
+            y: 1132
+          },
+        
+        ]
+      }
+    ],
+    xaxis: {
+      type: "datetime"
+    }
+  };
+  
+  var chart = new 
+  (document. querySelector("#chart"), options);
+  
+  chart.render();
